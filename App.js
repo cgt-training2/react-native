@@ -80,8 +80,8 @@ export const TabDonation = TabNavigator(
     },
     tabBarComponent: TabBarBottom,
     tabBarPosition: 'bottom',
-    animationEnabled: false,
-    swipeEnabled: true,
+    // animationEnabled: false,
+    // swipeEnabled: true,
   }
 );
 
@@ -121,7 +121,7 @@ export const DrawerStack = DrawerNavigator({
     },
 
     tabDonationScreen: { 
-      screen:TabDonation, 
+      screen: TabDonation, 
       headerMode: 'float',
       navigationOptions: ({ navigation }) => ({
         headerStyle: { backgroundColor: '#f42e78',width:'auto'},
@@ -146,7 +146,6 @@ export const DrawerNavigation = StackNavigator({
   DrawerStack: { screen: DrawerStack },
 }, {
   headerMode: 'float',
-
   navigationOptions: ({ navigation }) => ({
     headerStyle: { backgroundColor: '#f42e78',width:'auto'},
     headerTitleStyle:{

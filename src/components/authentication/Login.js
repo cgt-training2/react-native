@@ -25,9 +25,9 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 import ReusableClass from "../ReusableClass";
 
-type Props = {};
+// type Props = {};
 
-export default class Login extends Component<Props> {
+export default class Login extends Component {
 
 	static navigationOptions = {
     title: 'Registeration',
@@ -228,8 +228,7 @@ export default class Login extends Component<Props> {
         <ActivityIndicator size="large" color="#0000ff" 
           style={{opacity: this.state.loading ? 1.0 : 0.0}} animating={true}/>
     
-        <KeyboardAwareScrollView enableResetScrollToCoords={false} contentContainerStyle={styles.scroll} enableOnAndroid={true}>
-          	
+        <KeyboardAwareScrollView enableResetScrollToCoords={false} contentContainerStyle={styles.scroll} enableOnAndroid={true}>          	
             <TextInput 
               style = {this.getStyle().inputFirst} 
               onLayout = {this.onLayout.bind(this)}

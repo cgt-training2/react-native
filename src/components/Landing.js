@@ -79,13 +79,13 @@ export default class Landing extends Component<Props> {
     } else {
       // do something else
     }
-    this.setState({
-      interval: setInterval(() => {
-        this.setState({
-          position: this.state.position === this.state.dataSource.length ? 0 : this.state.position + 1
-        });
-      }, 2000)
-    });
+    // this.setState({
+    //   interval: setInterval(() => {
+    //     this.setState({
+    //       position: this.state.position === this.state.dataSource.length ? 0 : this.state.position + 1
+    //     });
+    //   }, 2000)
+    // });
   }
 
   componentDidMount() {
@@ -177,11 +177,6 @@ export default class Landing extends Component<Props> {
     const text = 'I am some centered text';  
     return (
       <View style={styles.container}>
-        <Slideshow 
-          dataSource={this.state.dataSource}
-          position={this.state.position}
-          onPositionChanged={position => this.setState({ position })}> 
-        </Slideshow>
         <ScrollView style={styles.scroll}>
           <View style={styles.viewTiles}>
             <ImageBackground style={styles.imgBackground} source={require('../images/donation.png')}>

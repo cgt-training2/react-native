@@ -29,9 +29,7 @@ import ReusableClass from "../ReusableClass";
 
 import ImagePicker from 'react-native-image-picker';
 
-type Props = {};
-
-export default class Register extends Component<Props> {
+export default class Register extends Component {
 
   static navigationOptions = {
     	title: 'Registration',
