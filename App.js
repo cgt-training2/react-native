@@ -144,7 +144,7 @@ export const DrawerStack = DrawerNavigator({
 // Drawer Navigation
 export const DrawerNavigation = StackNavigator({
   DrawerStack: { screen: DrawerStack },
-}, {
+  }, {
   headerMode: 'float',
   navigationOptions: ({ navigation }) => ({
     headerStyle: { backgroundColor: '#f42e78',width:'auto'},
@@ -213,7 +213,7 @@ export const LoginNavigator = StackNavigator({
     }
   },
   {
-    // initialRouteName: 'LoginScreen'
+    initialRouteName: 'RegisterStepOneScreen',
     headerMode: 'float',
     navigationOptions: {
       headerStyle: {backgroundColor: 'red'},
